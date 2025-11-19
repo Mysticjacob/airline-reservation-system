@@ -1,0 +1,67 @@
+# Ignore Maven's build output directory
+target/
+
+# Ignore Maven wrapper JAR (if using binary type - less common)
+.mvn/wrapper/maven-wrapper.jar
+
+# Ignore IDE-specific files and directories
+
+## IntelliJ IDEA ##
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+## Eclipse ##
+.project
+.classpath
+.settings/
+.metadata/
+bin/
+
+## NetBeans ##
+nbproject/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+## VS Code ##
+.vscode/
+
+# Ignore Operating System generated files
+.DS_Store # Mac
+.DS_Store? # Mac
+._.DS_Store # Mac
+.Spotlight-V100 # Mac
+.Trashes # Mac
+ehthumbs.db # Windows
+Thumbs.db # Windows
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore local configuration files (if any contain sensitive data like DB passwords)
+config.properties
+application.properties
+# Be careful: only ignore config files that contain secrets.
+# If a config file contains non-secret, project-specific settings, consider committing it.
+
+# Ignore local database files (if using embedded DB for dev, like H2)
+*.db
+*.db.*
+
+# Ignore sensitive environment variable files (if you use them locally for DB config)
+.env
+
+# Ignore any compiled JavaFX native libraries or specific build artifacts if generated
+# (These are usually platform-specific and shouldn't be committed)
+# Example: If using Gluon Client Maven Plugin or similar tools that generate native builds
+client/
+
+# Ignore temporary files created by editors or OS
+*.swp
+*.swo
+*~
