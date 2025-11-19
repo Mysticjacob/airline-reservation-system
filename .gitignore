@@ -1,67 +1,80 @@
-# Ignore Maven's build output directory
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ generated folder
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Maven
 target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# .mvn/wrapper/maven-wrapper.jar # Comment out if you want to commit the wrapper JAR
 
-# Ignore Maven wrapper JAR (if using binary type - less common)
-.mvn/wrapper/maven-wrapper.jar
+# Gradle
+.gradle
+gradle-app.setting
+settings.gradle
 
-# Ignore IDE-specific files and directories
+# IDE - Eclipse
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.recommenders
 
-## IntelliJ IDEA ##
-.idea/
-*.iml
+# IDE - IntelliJ IDEA
+.idea
 *.iws
+*.iml
 *.ipr
+*.properties
 out/
 
-## Eclipse ##
-.project
-.classpath
-.settings/
-.metadata/
-bin/
+# IDE - NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
 
-## NetBeans ##
-nbproject/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
-
-## VS Code ##
+# IDE - Visual Studio Code
 .vscode/
 
-# Ignore Operating System generated files
-.DS_Store # Mac
-.DS_Store? # Mac
-._.DS_Store # Mac
-.Spotlight-V100 # Mac
-.Trashes # Mac
-ehthumbs.db # Windows
-Thumbs.db # Windows
-
-# Ignore logs
-*.log
-logs/
-
-# Ignore local configuration files (if any contain sensitive data like DB passwords)
-config.properties
-application.properties
-# Be careful: only ignore config files that contain secrets.
-# If a config file contains non-secret, project-specific settings, consider committing it.
-
-# Ignore local database files (if using embedded DB for dev, like H2)
-*.db
-*.db.*
-
-# Ignore sensitive environment variable files (if you use them locally for DB config)
-.env
-
-# Ignore any compiled JavaFX native libraries or specific build artifacts if generated
-# (These are usually platform-specific and shouldn't be committed)
-# Example: If using Gluon Client Maven Plugin or similar tools that generate native builds
-client/
-
-# Ignore temporary files created by editors or OS
-*.swp
-*.swo
-*~
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
